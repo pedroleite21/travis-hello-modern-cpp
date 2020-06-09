@@ -16,4 +16,5 @@ install:
 - "[ $GCC = gcc ] && export GCC=gcc || true"
 script:
   - make
+  - make cov
 #  - make test
