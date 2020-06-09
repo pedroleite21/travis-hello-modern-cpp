@@ -1,0 +1,14 @@
+#!/bin/bash
+#!/usr/bin/bash
+
+echo "abc" | ./cov
+echo 2 | ./cov
+echo "abc2" | ./cov
+echo "abc@" | ./cov
+gcov -b identifier.c
+
+echo "Cppcheck"
+cppcheck --enable=all --suppress=missingIncludeSystem identifier.c
+
+echo "Valgrind"
+valgrind --leak-check=full --show-leak-kinds=all echo "abc" | ./identifier

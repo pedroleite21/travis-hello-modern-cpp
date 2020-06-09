@@ -4,6 +4,7 @@ cov
 
 *.gcno
 *.gcda
+*.gcov
 
 # Prerequisites
 *.d
