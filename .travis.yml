@@ -19,4 +19,4 @@ install:
 script:
   - make
   - make cov
-#  - make test
+  - make test
