@@ -19,4 +19,5 @@ install:
 script:
   - make
   - make cov
+  - make sanitize
   - make test

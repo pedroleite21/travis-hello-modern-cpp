@@ -1,17 +1,28 @@
 #!/bin/bash
 #!/usr/bin/bash
 
-echo "Entrada: a / Saída Esperada: Valido"
+echo "Entrada: a"
+echo "Saída Esperada: Valido"
 echo "a" | ./cov
-echo "Entrada: abcdefg / Saída Esperada: Invalido"
+echo ""
+echo "Entrada: abcdefg"
+echo "Saída Esperada: Invalido"
 echo "abcdefg" | ./cov
-echo "Entrada: 0 / Saída Esperada: Invalido"
+echo ""
+echo "Entrada: 0"
+echo "Saída Esperada: Invalido"
 echo 0 | ./cov
-echo "Entrada: abc4 / Saída Esperada: Valido"
+echo ""
+echo "Entrada: abc4"
+echo "Saída Esperada: Valido"
 echo "abc4" | ./cov
-echo "Entrada: abc@ / Saída Esperada: Invalido"
+echo ""
+echo "Entrada: abc@"
+echo "Saída Esperada: Invalido"
 echo "abc@" | ./cov
-echo "Entrada: A1b2C3 / Saída Esperada: Valido"
+echo ""
+echo "Entrada: A1b2C3"
+echo "Saída Esperada: Valido"
 echo "A1b2C3" | ./cov
 gcov -b identifier.c
 
