@@ -14,6 +14,9 @@ hello: identifier.c
 cov: identifier.c
 	$(GCC) $(GCCFLAGS) -fprofile-arcs -ftest-coverage -o $@ identifier.c
 
+sanitize: identifier.c
+	$(GCC) $(GCCFLAGS) -fsanitize=address identifier.c -o identifier_sanitize
+
 clean:
 	$(RM) $(ALL)   *.o
 

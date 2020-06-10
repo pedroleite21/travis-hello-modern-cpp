@@ -1,5 +1,6 @@
 #Ignore identifier
 identifier
+identifier_sanitize
 cov
 
 *.gcno
