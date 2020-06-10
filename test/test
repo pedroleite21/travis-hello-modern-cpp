@@ -1,10 +1,18 @@
 #!/bin/bash
 #!/usr/bin/bash
 
-echo "abc" | ./cov
-echo 2 | ./cov
-echo "abc2" | ./cov
+echo "Entrada: a / Saída Esperada: Valido"
+echo "a" | ./cov
+echo "Entrada: abcdefg / Saída Esperada: Invalido"
+echo "abcdefg" | ./cov
+echo "Entrada: 0 / Saída Esperada: Invalido"
+echo 0 | ./cov
+echo "Entrada: abc4 / Saída Esperada: Valido"
+echo "abc4" | ./cov
+echo "Entrada: abc@ / Saída Esperada: Invalido"
 echo "abc@" | ./cov
+echo "Entrada: A1b2C3 / Saída Esperada: Valido"
+echo "A1b2C3" | ./cov
 gcov -b identifier.c
 
 echo "Cppcheck"

@@ -7,7 +7,7 @@ int valid_s (char ch){
 		return (0); 
 } 
       
-int valid_f(ch) char ch; {
+int valid_f(char ch){
 	if (((ch >= 'A') && (ch <= 'Z')) || ((ch >= 'a') && (ch <= 'z')) || ((ch >= '0') && (ch <= '9')))       
 		return (1);    
 	else        
